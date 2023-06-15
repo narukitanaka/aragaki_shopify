@@ -1,0 +1,46 @@
+{
+  "name": "t:sections.header.name",
+  "type": "header",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-bar-0": {
+          "type": "announcement",
+          "settings": {
+            "text": "Welcome to our store",
+            "link": ""
+          }
+        }
+      },
+      "block_order": [
+        "announcement-bar-0"
+      ],
+      "settings": {
+        "color_scheme": "background-1",
+        "show_line_separator": true,
+        "auto_rotate": false,
+        "change_slides_speed": 5
+      }
+    },
+    "header": {
+      "type": "header",
+      "settings": {
+      }
+    },
+    "d0277f41-5b4c-4f94-bd26-151be9648051": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<p>json出力用<\/p>",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header",
+    "d0277f41-5b4c-4f94-bd26-151be9648051"
+  ]
+}
