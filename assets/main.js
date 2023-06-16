@@ -18,6 +18,7 @@ $(function () {
 		return false;
 	});
 
+  //pc_メガメニュー
   $('.js-has-subnav01').mouseover(function () {
 		$('.subnav01').addClass('is-megamenu-show');
 	})
@@ -102,5 +103,55 @@ $(function () {
     });
   }
 
+  //トップmvスライダー
+  const swiper = new Swiper(".swiper", {
+    loop: true,
+    autoplay: {
+      delay: 5000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    speed: 1000,
+    slidesPerView: 1.2,
+    centeredSlides: true,
+  });
+
+  //トップ無限スライダー
+  const swiper02 = new Swiper(".swiper02", {
+    autoplay: {
+      delay: 0,
+      disableOnInteraction: false,
+    },
+    loop: true,
+    slidesPerView: 3, 
+    speed: 3000, 
+    allowTouchMove: false,
+    breakpoints: {
+      770: {
+        slidesPerView: 6,
+      }
+    }
+  });
+
+  //商品詳細　商品画像スライダー
+  const swiper03 = new Swiper(".swiper03", {
+    loop: true,
+  }); function thumbnail(index) {
+    swiper03.slideTo(index);
+  }
+
+  //トップランキング_SP
+  const swiper04 = new Swiper(".swiper04", {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    speed: 1000,
+    slidesPerView: 1,
+    centeredSlides: true,
+  });
 
 });

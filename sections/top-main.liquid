@@ -1,0 +1,393 @@
+<!-- メインビジュアル -->
+<div id="top_mv_wrap" class="kazari01">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <picture>
+          <source srcset="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_mv01_sp.jpg" media="(max-width: 769px)">
+          <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_mv01.jpg" alt="">
+        </picture>
+      </div>
+      <div class="swiper-slide">
+        <picture>
+          <source srcset="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_mv02_sp.jpg" media="(max-width: 769px)">
+          <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_mv02.jpg" alt="">
+        </picture>
+      </div>
+      <div class="swiper-slide">
+        <picture>
+          <source srcset="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_mv03_sp.jpg" media="(max-width: 769px)">
+          <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_mv03.jpg" alt="">
+        </picture>
+      </div>
+    </div>
+    <!-- /.swiper-wrapper -->
+    <div class="swiper-pagination"></div>
+  </div>
+  <!-- /.swiper -->
+</div>
+<!-- /#top_mv_wrap -->
+
+<!-- 無限スライダー -->
+<div class="top_slider_wrap kazari02">
+  <div class="swiper02">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_slider-img01.jpg" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_slider-img02.jpg" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_slider-img03.jpg" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_slider-img04.jpg" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_slider-img05.jpg" alt="" />
+      </div>
+      <div class="swiper-slide">
+        <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_slider-img06.jpg" alt="" />
+      </div>
+    </div>
+    <!-- /.swiper-wrapper-->
+  </div>
+  <!-- /.swiper02-->
+</div>
+<!-- /.top_slider_wrap-->
+
+<div id="contents" class="kazari07">
+  <div class="inner flex">
+
+    <!-- サイドバー -->
+    {% render 'side-menu' %}
+
+    <!-- メインコンテンツ -->
+    <div class="main-contents_wrap">
+      <section class="top_news_wrap fadeIn">
+        <h2>お知らせ</h2>
+        <table>
+          {% for article in blogs['news'].articles limit: 3 %}
+            <tr>
+              <th>
+                <time>{{ article.created_at | date: '%Y.%m.%d' }}</time>
+              </th>
+              <td>
+                <a style="pointer-events: none;" href="{{ article.url }}">{{ article.title }}</a>
+              </td>
+            </tr>
+          {% endfor %}
+        </table>
+        <div class="archive-link">
+          <a href="#">
+            <p>一覧を見る</p>
+            <div class="link_arrow"></div>
+          </a>
+        </div>
+      </section>
+      <!-- /.main-contents_wrap -->
+
+      <section class="top_feature_wrap">
+        <h2 class="fadeIn">
+          <span>特</span>集</h2>
+        <p class="text fadeIn">１日を彩る沖縄の食卓</p>
+        <div class="feature_area fadeIn">
+          <div class="feature_box">
+            <a href="#">
+              <picture>
+                <source srcset="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_mornig-img01_sp.jpg" media="(max-width: 769px)">
+                <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_mornig-img01.jpg" alt="">
+              </picture>
+              <div>
+                <p>清々しい朝を迎えるための<br class="u-sp">健康朝ごはん。</p>
+                <div class="link_arrow"></div>
+              </div>
+            </a>
+          </div>
+          <div class="feature_box">
+            <a href="#">
+              <picture>
+                <source srcset="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_lunch-img01_sp.jpg" media="(max-width: 769px)">
+                <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_lunch-img01.jpg" alt="">
+              </picture>
+              <div>
+                <p>ランチタイムは<br class="u-sp">ちょっと外国気分。</p>
+                <div class="link_arrow"></div>
+              </div>
+            </a>
+          </div>
+          <div class="feature_box">
+            <a href="#">
+              <picture>
+                <source srcset="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_teatime-img01_sp.jpg" media="(max-width: 769px)">
+                <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_teatime-img01.jpg" alt="">
+              </picture>
+              <div>
+                <p>ホッと一息、<br class="u-sp">昼下がりを鮮やかに彩る。</p>
+                <div class="link_arrow"></div>
+              </div>
+            </a>
+          </div>
+          <div class="feature_box">
+            <a href="#">
+              <picture>
+                <source srcset="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_dinner-img01_sp.jpg" media="(max-width: 769px)">
+                <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_dinner-img01.jpg" alt="">
+              </picture>
+              <div>
+                <p>琉球の味覚を存分に味わう。</p>
+                <div class="link_arrow"></div>
+              </div>
+            </a>
+          </div>
+          <div class="feature_box">
+            <a href="#">
+              <picture>
+                <source srcset="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_evening-img01_sp.jpg" media="(max-width: 769px)">
+                <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_evening-img01.jpg" alt="">
+              </picture>
+              <div>
+                <p>晩酌のお供に。</p>
+                <div class="link_arrow"></div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- /.feature_area-->
+      </section>
+      <!-- /.top_feature_wrap-->
+
+      <section class="top_item-category_wrap">
+        <h2 class="fadeIn">
+          <span>商</span>品を選ぶ</h2>
+        <div class="item-category_area fadeIn">
+          <h3>商品カテゴリー</h3>
+          <ul>
+            <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/categry_01.jpg" alt=""><p>乾物（農産）</p></a></li>
+            <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/categry_02.jpg" alt=""><p>乾物（海産物）</p></a></li>
+            <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/categry_04.jpg" alt=""><p>だし</p></a></li>
+            <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/categry_03.jpg" alt=""><p>沖縄そば</p></a></li>
+            <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/categry_05.jpg" alt=""><p>加工肉・レトルト食品</p></a></li>
+            <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/categry_06.jpg" alt=""><p>お菓子</p></a></li>
+            <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/categry_07.jpg" alt=""><p>ドリンク</p></a></li>
+            <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/categry_08.jpg" alt=""><p>調味料</p></a></li>
+            <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/categry_09.jpg" alt=""><p>その他</p></a></li>
+          </ul>
+        </div>
+        <div class="item-category_area fadeIn">
+          <h3>ギフト向け</h3>
+          <ul>
+            <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/category-gift01.jpg" alt=""><p>お友達へ</p></a></li>
+            <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/category-gift02.jpg" alt=""><p>お世話になった方へ</p></a></li>
+            <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/category-gift03.jpg" alt=""><p>家族へ</p></a></li>
+          </ul>
+        </div>
+        <div class="item-category_area fadeIn">
+          <h3>お取り寄せ</h3>
+          <ul>
+            <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/category-stock01.jpg" alt=""><p>いつもの食事に</p></a></li>
+            <li><a href="#"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/category-stock02.jpg" alt=""><p>おもてなし</p></a></li>
+          </ul>
+        </div>
+      </section>
+      <!-- /.top_item-category_wrap -->
+
+      <section class="top_ranking_wrap">
+        <h2 class="fadeIn">
+          <span>ラ</span>ンキング</h2>
+        <ul class="fadeIn u-pc">
+          <li>
+            <a href="#">
+              <img
+                class="is_ObjectFit"
+                src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/item_sample01.jpg"
+                alt="">
+              <p>商品名</p>
+              <p>〇〇円</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                class="is_ObjectFit"
+                src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/item_sample02.jpg"
+                alt="">
+              <p>商品名</p>
+              <p>〇〇円</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                class="is_ObjectFit"
+                src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/item_sample03.jpg"
+                alt="">
+              <p>商品名</p>
+              <p>〇〇円</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                class="is_ObjectFit"
+                src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/item_sample04.jpg"
+                alt="">
+              <p>商品名</p>
+              <p>〇〇円</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                class="is_ObjectFit"
+                src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/item_sample05.jpg"
+                alt="">
+              <p>商品名</p>
+              <p>〇〇円</p>
+            </a>
+          </li>
+        </ul>
+
+        <div class="swiper04 fadeIn u-sp">
+          <ul class="swiper-wrapper">
+            <li class="swiper-slide">
+              <a href="#">
+                <img
+                  class="is_ObjectFit"
+                  src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/item_sample01.jpg"
+                  alt="">
+                <p>商品名</p>
+                <p>〇〇円</p>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#">
+                <img
+                  class="is_ObjectFit"
+                  src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/item_sample02.jpg"
+                  alt="">
+                <p>商品名</p>
+                <p>〇〇円</p>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#">
+                <img
+                  class="is_ObjectFit"
+                  src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/item_sample03.jpg"
+                  alt="">
+                <p>商品名</p>
+                <p>〇〇円</p>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#">
+                <img
+                  class="is_ObjectFit"
+                  src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/item_sample04.jpg"
+                  alt="">
+                <p>商品名</p>
+                <p>〇〇円</p>
+              </a>
+            </li>
+            <li class="swiper-slide">
+              <a href="#">
+                <img
+                  class="is_ObjectFit"
+                  src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/item_sample05.jpg"
+                  alt="">
+                <p>商品名</p>
+                <p>〇〇円</p>
+              </a>
+            </li>
+          </ul>
+          <!-- /.swiper-wrapper -->
+          <div class="swiper-pagination u-sp"></div>
+        </div>
+        <!-- /.swiper04 -->
+
+      </section>
+      <!-- /.top_ranking_wrap -->
+
+      <section class="top_recipe_wrap">
+        <h2 class="fadeIn">
+          <span>読</span>みもの</h2>
+        <ul class="fadeIn">
+          <li>
+            <a href="#">
+              <img
+                class="is_ObjectFit"
+                src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/yomimono_sample-img01.jpg"
+                alt="">
+              <p>タイトルタイトルタイトル</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                class="is_ObjectFit"
+                src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/yomimono_sample-img02.jpg"
+                alt="">
+              <p>タイトルタイトルタイトル</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                class="is_ObjectFit"
+                src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/yomimono_sample-img03.jpg"
+                alt="">
+              <p>タイトルタイトルタイトル</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                class="is_ObjectFit"
+                src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/yomimono_sample-img04.jpg"
+                alt="">
+              <p>タイトルタイトルタイトル</p>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                class="is_ObjectFit"
+                src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/yomimono_sample-img05.jpg"
+                alt="">
+              <p>タイトルタイトルタイトル</p>
+            </a>
+          </li>
+        </ul>
+        <div class="archive-link">
+          <a href="#">
+            <p>読みもの一覧へ</p>
+            <div class="link_arrow"></div>
+          </a>
+        </div>
+      </section>
+      <!-- /.top_recipe_wrap -->
+
+    </div>
+    <!-- /.maain-contents_wrap-->
+  </div>
+  <!-- /.inner-->
+  <div class="kazari03"></div>
+  <div class="kazari04"></div>
+  <div class="kazari05"></div>
+  <div class="kazari06"></div>
+</div>
+<!-- /#contents-->
+
+
+{% schema %}
+  {
+    "name": "top-main",
+    "presets": [
+      {
+        "name": "top-main"
+      }
+    ]
+  }
+{% endschema %}

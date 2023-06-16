@@ -1188,7 +1188,7 @@ header .main-nav .is-icon-nav-fixed {
 }
 
 .hambager-content {
-  background-image: url(../img/icon-egg01.svg);
+  background-image: url(https://cdn.shopify.com/s/files/1/0775/7886/2887/files/icon-egg01.svg);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -1332,6 +1332,9 @@ header .main-nav .is-icon-nav-fixed {
 .mega-menu_sp nav {
   margin-bottom: 40px;
 }
+.mega-menu_sp .sp_categry-list_box .nav-list li {
+  padding-left: 30px;
+}
 .mega-menu_sp .list-ttl {
   display: flex;
   justify-content: space-between;
@@ -1384,9 +1387,9 @@ header .main-nav .is-icon-nav-fixed {
   border-right: none;
   border-bottom: none;
 }
-.mega-menu_sp .nav-list:nth-of-type(2) li, .mega-menu_sp .nav-list:nth-of-type(3) li, .mega-menu_sp .nav-list:nth-of-type(4) li {
+/* .mega-menu_sp .nav-list:nth-of-type(1) li, .mega-menu_sp .nav-list:nth-of-type(2) li, .mega-menu_sp .nav-list:nth-of-type(3) li {
   padding-left: 30px;
-}
+} */
 .mega-menu_sp .nav-list li {
   margin-bottom: 15px;
   font-weight: 500;
@@ -1931,7 +1934,7 @@ aside .under_menu li a {
   position: absolute;
   top: -14px;
   left: -56px;
-  background: url(../img/title-ashirai01.png);
+  background: url(https://cdn.shopify.com/s/files/1/0775/7886/2887/files/title-ashirai01.png);
   background-size: contain;
   background-repeat: no-repeat;
   z-index: -1;
@@ -2115,10 +2118,10 @@ aside .under_menu li a {
   padding-top: 0;
 }
 .top_item-category_wrap .item-category_area:first-of-type h3::before {
-  background-image: url(../img/icon_search02.png);
+  background-image: url(https://cdn.shopify.com/s/files/1/0775/7886/2887/files/icon_search02.png);
 }
 .top_item-category_wrap .item-category_area:nth-of-type(2) h3::before {
-  background-image: url(../img/icon-present.png);
+  background-image: url(https://cdn.shopify.com/s/files/1/0775/7886/2887/files/icon-present.png);
 }
 .top_item-category_wrap .item-category_area:last-of-type {
   border-bottom: none;
@@ -2130,7 +2133,7 @@ aside .under_menu li a {
 }
 .top_item-category_wrap .item-category_area:last-of-type h3::before {
   width: 37px;
-  background-image: url(../img/icon-box.png);
+  background-image: url(https://cdn.shopify.com/s/files/1/0775/7886/2887/files/icon-box.png);
 }
 .top_item-category_wrap .item-category_area h3 {
   position: relative;
@@ -2263,19 +2266,19 @@ aside .under_menu li a {
   background-size: contain;
 }
 .top_ranking_wrap ul li:first-of-type::after {
-  background-image: url(../img/icon-ranking01.png);
+  background-image: url(https://cdn.shopify.com/s/files/1/0775/7886/2887/files/icon-ranking01.png);
 }
 .top_ranking_wrap ul li:nth-of-type(2)::after {
-  background-image: url(../img/icon-ranking02.png);
+  background-image: url(https://cdn.shopify.com/s/files/1/0775/7886/2887/files/icon-ranking02.png);
 }
 .top_ranking_wrap ul li:nth-of-type(3)::after {
-  background-image: url(../img/icon-ranking03.png);
+  background-image: url(https://cdn.shopify.com/s/files/1/0775/7886/2887/files/icon-ranking03.png);
 }
 .top_ranking_wrap ul li:nth-of-type(4)::after {
-  background-image: url(../img/icon-ranking04.png);
+  background-image: url(https://cdn.shopify.com/s/files/1/0775/7886/2887/files/icon-ranking04.png);
 }
 .top_ranking_wrap ul li:nth-of-type(5)::after {
-  background-image: url(../img/icon-ranking05.png);
+  background-image: url(https://cdn.shopify.com/s/files/1/0775/7886/2887/files/icon-ranking05.png);
 }
 .top_ranking_wrap ul li img {
   width: 100%;
@@ -2388,7 +2391,7 @@ aside .under_menu li a {
   width: 285px;
   width: 18%;
   aspect-ratio: 19/26;
-  background-image: url(../img/img-kazari01.png);
+  background-image: url(https://cdn.shopify.com/s/files/1/0775/7886/2887/files/img-kazari01.png);
   background-size: contain;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -2413,7 +2416,7 @@ aside .under_menu li a {
   content: "";
   width: 100px;
   height: 205px;
-  background-image: url(../img/img-kazari02.png);
+  background-image: url(https://cdn.shopify.com/s/files/1/0775/7886/2887/files/img-kazari02.png);
   background-size: contain;
   background-position: center top;
   background-repeat: no-repeat;
@@ -2434,7 +2437,7 @@ aside .under_menu li a {
   content: "";
   width: 450px;
   aspect-ratio: 79/85;
-  background-image: url(../img/img-kazari03.png);
+  background-image: url(https://cdn.shopify.com/s/files/1/0775/7886/2887/files/img-kazari03.png);
   background-size: contain;
   background-position: center top;
   background-repeat: no-repeat;
@@ -2456,7 +2459,7 @@ aside .under_menu li a {
   content: "";
   width: 275px;
   height: 415px;
-  background-image: url(../img/img-kazari04.png);
+  background-image: url(https://cdn.shopify.com/s/files/1/0775/7886/2887/files/img-kazari04.png);
   background-size: contain;
   background-position: center top;
   background-repeat: no-repeat;
@@ -2477,7 +2480,7 @@ aside .under_menu li a {
   content: "";
   width: 300px;
   height: 335px;
-  background-image: url(../img/img-kazari05.png);
+  background-image: url(https://cdn.shopify.com/s/files/1/0775/7886/2887/files/img-kazari05.png);
   background-size: contain;
   background-position: center top;
   background-repeat: no-repeat;
@@ -2498,7 +2501,7 @@ aside .under_menu li a {
   content: "";
   width: 400px;
   height: 430px;
-  background-image: url(../img/img-kazari06.png);
+  background-image: url(https://cdn.shopify.com/s/files/1/0775/7886/2887/files/img-kazari06.png);
   background-size: contain;
   background-position: center top;
   background-repeat: no-repeat;
@@ -2523,7 +2526,7 @@ aside .under_menu li a {
   content: "";
   width: 200px;
   height: 565px;
-  background-image: url(../img/img-kazari07.png);
+  background-image: url(https://cdn.shopify.com/s/files/1/0775/7886/2887/files/img-kazari07.png);
   background-size: contain;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -2533,7 +2536,7 @@ aside .under_menu li a {
     left: 0;
     width: 124px;
     height: 173px;
-    background-image: url(../img/img-kazari08.png);
+    background-image: url(https://cdn.shopify.com/s/files/1/0775/7886/2887/files/img-kazari08.png);
   }
 }
 
@@ -2547,7 +2550,7 @@ aside .under_menu li a {
   content: "";
   width: 190px;
   height: 260px;
-  background-image: url(../img/img-kazari08.png);
+  background-image: url(https://cdn.shopify.com/s/files/1/0775/7886/2887/files/img-kazari08.png);
   background-size: contain;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -2659,7 +2662,7 @@ company
   content: "";
   width: 450px;
   aspect-ratio: 79/85;
-  background-image: url(../img/img-kazari03.png);
+  background-image: url(https://cdn.shopify.com/s/files/1/0775/7886/2887/files/img-kazari03.png);
   background-size: contain;
   background-position: center top;
   background-repeat: no-repeat;
@@ -3134,7 +3137,7 @@ company
   top: 50%;
   transform: translateY(-50%);
   left: 29%;
-  content: url(../img/icon-cart02.svg);
+  content: url(https://cdn.shopify.com/s/files/1/0775/7886/2887/files/icon-cart02.svg);
   width: 27px;
   height: 26px;
 }

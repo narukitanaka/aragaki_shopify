@@ -1,0 +1,62 @@
+<aside>
+  <div class="side_box">
+    <h3>特集<br>1日を彩る沖縄の食卓</h3>
+    <ul>
+      <li><a href="#">朝 - 朝ごはん</a></li>
+      <li><a href="#">昼 - ランチ</a></li>
+      <li><a href="#">夕 - ティータイム</a></li>
+      <li><a href="#">晩 - 晩ご飯</a></li>
+      <li><a href="#">夜 - 晩酌</a></li>
+    </ul>
+  </div>
+  <div class="side_box">
+    <h3>商品を選ぶ</h3>
+    <div>
+      <p>カテゴリ</p>
+      <ul>
+        {% for link in linklists.category-menu01.links %}
+          <li>
+            <a href="{{ link.url }}">{{ link.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <p>ギフト向け</p>
+      <ul>
+        {% for link in linklists.category-gift-menu.links %}
+          <li>
+            <a href="{{ link.url }}">{{ link.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+    <div>
+      <p>お取り寄せ</p>
+      <ul>
+        {% for link in linklists.category-stockorder-menu.links %}
+          <li>
+            <a href="{{ link.url }}">{{ link.title }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="side_box">
+    <h3>読みもの</h3>
+    <ul>
+      <li><a href="#">レシピ</a></li>
+      <li><a href="#">レシピ</a></li>
+    </ul>
+  </div>
+  <div class="side_box under_menu">
+    <ul>
+      <li><a href="#">よくあるご質問</a></li>
+      <li><a href="#">お知らせ</a></li>
+      <li><a href="#">ご利用ガイド</a></li>
+      <li><a href="#">プライバシーポリシー</a></li>
+      <li><a href="/pages/company">会社情報</a></li>
+      <li><a href="#">お問い合わせ</a></li>
+    </ul>
+  </div>
+</aside>

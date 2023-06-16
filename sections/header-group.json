@@ -4,6 +4,7 @@
   "sections": {
     "announcement-bar": {
       "type": "announcement-bar",
+      "disabled": true,
       "blocks": {
         "announcement-bar-0": {
           "type": "announcement",
@@ -27,20 +28,10 @@
       "type": "header",
       "settings": {
       }
-    },
-    "d0277f41-5b4c-4f94-bd26-151be9648051": {
-      "type": "custom-liquid",
-      "settings": {
-        "custom_liquid": "<p>json出力用<\/p>",
-        "color_scheme": "",
-        "padding_top": 40,
-        "padding_bottom": 52
-      }
     }
   },
   "order": [
     "announcement-bar",
-    "header",
-    "d0277f41-5b4c-4f94-bd26-151be9648051"
+    "header"
   ]
 }
