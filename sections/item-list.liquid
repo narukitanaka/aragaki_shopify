@@ -1,0 +1,102 @@
+<div id="contents" class="p-under_wrap kazari08">
+  <div class="inner flex p-item-list_inner">
+
+    <!-- サイドバー -->
+    {% render 'side-menu' %}
+
+    <!-- メインコンテンツ -->
+    <div class="main-contents_wrap">
+      <section class="p-collection_wrap">
+        <!-- パンくずリスト -->
+        <div class="breadcrumb">
+          <nav>
+            <ol>
+              <li>
+                <a href="{{ routes.root_url }}"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/icon-home.svg" alt=""></a>
+              </li>
+              <li>{{ collection.title }}</li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class="p-under_head-img">
+          <img
+            class="is_ObjectFit"
+            src="{{ collection | img_url: 'master' }}"
+            alt="">
+          <div>
+            <p>{{ collection.title }}</p>
+          </div>
+        </div>
+
+        {% if cart.attributes.pagination != blank %}
+          {%- assign limit = cart.attributes.pagination %}
+        {% else %}
+          {% assign limit = 16 -%}
+        {% endif %}
+        {% paginate collection.products by limit %}
+
+          <!-- 並び順 -->
+          <div class="p-order-content">
+            <ul>
+              <li class="u-pc">並び順</li>
+              <li>
+                <a href="{{ product.url }}?sort_by=best-selling" data-sort-by="best-selling">おすすめ順</a>
+              </li>
+              <li>
+                <a href="{{ product.url }}?sort_by=created-descending" data-sort-by="created-descending">新着順</a>
+              </li>
+              <li>
+                <a href="{{ product.url }}?sort_by=price-ascending" data-sort-by="price-ascending">価格が安い順</a>
+              </li>
+              <li>
+                <a href="{{ product.url }}?sort_by=price-descending" data-sort-by="price-descending">価格が高い順</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="item-list_area">
+            <ul>
+
+              {% for product in collection.products %}
+                <li class="item-box">
+                  <a href="{{ product.url }}">
+                    <div class="img-box"><img
+                        class="is_ObjectFit"
+                        src="{{ product.featured_image.src | img_url: 'master' }}"
+                        alt=""></div>
+                    <p>{{ product.title }}</p>
+                    <p>{{ product.price | money }}</p>
+                  </a>
+                </li>
+              {% endfor %}
+
+            </ul>
+          </div>
+
+          {% if paginate.pages > 1 %}
+            {% render "pagination", paginate: paginate %}
+          {% endif %}
+
+        {% endpaginate %}
+
+      </section>
+    </div>
+    <!-- /.maain-contents_wrap-->
+  </div>
+  <!-- /.inner-->
+  <div class="kazari03"></div>
+</div>
+<!-- /#contents-->
+
+
+{% schema %}
+  {
+    "name": "item-list",
+    "presets": [
+      {
+        "name": "item-list"
+      }
+    ]
+  }
+{% endschema %}

@@ -25,6 +25,13 @@ cart-items.is-empty .title-wrapper-with-link,
   margin: 4.5rem 0 2rem;
 }
 
+.cart__warnings .button {
+  font-size: 18px !important;
+  background-color: #030304 !important;
+  color: #fff !important;
+  min-height: 75px !important;
+}
+
 .cart__contents > * + * {
   margin-top: 2.5rem;
 }
@@ -156,6 +163,11 @@ cart-items {
 
 .cart__ctas button {
   width: 100%;
+  font-size: 18px;
+  background-color: #030304;
+  color: #fff;
+  min-height: 75px;
+
 }
 
 .cart__ctas > *:not(noscript:first-child) + * {

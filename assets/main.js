@@ -136,13 +136,6 @@ $(function () {
     }
   });
 
-  //商品詳細　商品画像スライダー
-  const swiper03 = new Swiper(".swiper03", {
-    loop: true,
-  }); function thumbnail(index) {
-    swiper03.slideTo(index);
-  }
-
   //トップランキング_SP
   const swiper04 = new Swiper(".swiper04", {
     pagination: {

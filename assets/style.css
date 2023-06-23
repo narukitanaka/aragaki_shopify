@@ -2247,7 +2247,7 @@ aside .under_menu li a {
 .top_ranking_wrap ul {
   position: relative;
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   gap: 15px;
   z-index: 2;
 }
@@ -2686,6 +2686,7 @@ company
 }
 .breadcrumb nav ol li {
   font-size: 14px;
+  white-space: nowrap;
 }
 .breadcrumb nav ol li a {
   font-size: 14px;
@@ -2696,6 +2697,13 @@ company
   display: inline-block;
   padding: 0 10px;
   font-weight: bold;
+}
+.breadcrumb li:last-child {
+  display: block;
+  width: auto;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .breadcrumb li:last-child::after {
@@ -2725,9 +2733,12 @@ company
   place-content: center;
 }
 
-.p-pager__link--current {
+.pagination__item--current {
   border-radius: 100px;
   border: 1px solid #333;
+}
+.pagination__item--current::after {
+  display: none !important;
 }
 
 /*************************************************
