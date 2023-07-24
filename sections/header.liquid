@@ -22,7 +22,7 @@
       <div class="header_icon-area">
 
         <div class="header_search-content">
-          <form method="get" action="#">
+          <form method="get" action="/search">
             <div class="header_search-inner">
               <input
                 type="text"
@@ -43,13 +43,21 @@
 
         <div class="header_contact_tel">
           <a href="tel:098-875-1316">
-            <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/icon-tel.png" alt="">
             <div>
+              <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/icon-tel.png" alt="">
               <p class="tel-num">098-875-1316</p>
-              <p>
-                <span>（受付時間：0:00〜0:00）</span>
-              </p>
             </div>
+            <p class="time">
+              <span>（受付時間：平日10:00〜16:00）</span><br>
+              <span>※土･日･祝日は休業日となります</span>
+            </p>
+            {% comment %} <div>
+            <p class="tel-num">098-875-1316</p>
+            <p>
+            <span>（受付時間：平日10:00〜16:00）</span><br>
+            <span>※土･日･祝日は休業日となります</span>
+            </p>
+            </div> {% endcomment %}
           </a>
         </div>
 
@@ -76,7 +84,7 @@
 
   <div class="main-nav">
     <div class="inner">
-      <nav class="u-pc">
+      <nav class="u-md-pc">
         <ul>
           <li class="js-has-subnav01">
             特集-1日を彩る沖縄の食卓
@@ -139,10 +147,10 @@
           {% endfor %}
         </ul>
       </nav>
-      <div class="u-sp">
+      <div class="u-md">
         <div class="icon_nav_sp">
           <div class="icon-box">
-            <a href="#"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/icon-serch.png" alt=""></a>
+            <a href="/search"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/icon-serch.png" alt=""></a>
           </div>
           <div class="icon-box">
             <a href="#"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/icon-login.png" alt="">ログイン</a>
@@ -229,15 +237,15 @@
           <div class="arrow_right"></div>
         </li>
         <li class="list-ttl">
-          <a href="#">お知らせ</a>
+          <a href="/blogs/news">お知らせ</a>
           <div class="arrow_right"></div>
         </li>
         <li class="list-ttl">
-          <a href="#">よくあるご質問</a>
+          <a href="/pages/guide">よくあるご質問</a>
           <div class="arrow_right"></div>
         </li>
         <li class="list-ttl">
-          <a href="#">プライバシーポリシー</a>
+          <a href="/pages/policy">プライバシーポリシー</a>
         </li>
         <li class="list-ttl">
           <a href="/pages/company">会社情報</a>
@@ -245,11 +253,11 @@
       </ul>
     </nav>
     <button>
-      <a href="#">お問い合わせはこちら<div class="link_arrow"></div>
+      <a href="pages/company">お問い合わせはこちら<div class="link_arrow"></div>
       </a>
     </button>
     <button>
-      <a href="#">ご利用ガイドはこちら</a>
+      <a href="/pages/guide">ご利用ガイドはこちら</a>
     </button>
   </div>
   <!-- /.inner -->

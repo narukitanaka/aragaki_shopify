@@ -1,0 +1,73 @@
+<div id="contents" class="p-under_wrap kazari08">
+  <div class="inner flex">
+
+    <!-- サイドバー -->
+    {% render 'side-menu' %}
+
+    <!-- メインコンテンツ -->
+    <div class="main-contents_wrap">
+      <section class="p-news-list_wrap">
+        <!-- パンくずリスト -->
+        <div class="breadcrumb">
+          <nav>
+            <ol>
+              <li>
+                <a href="{{ routes.root_url }}"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/icon-home.svg" alt=""></a>
+              </li>
+              <li>お知らせ</li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class="p-head_ttl">
+          <h3>お知らせ一覧</h3>
+        </div>
+
+        {%- paginate blog.articles by 14 -%}
+
+          <!-- ページネーション -->
+          {% if paginate.pages > 1 %}
+            {% render "pagination", paginate: paginate %}
+          {% endif %}
+
+          <table>
+            {% for article in blogs['news'].articles %}
+              <tr>
+                <th>
+                  {{ article.created_at | date: '%Y.%m.%d' }}
+                </th>
+                <td>
+                  <a href="{{ article.url }}">
+                    {{ article.title }}</a>
+                </td>
+              </tr>
+            {% endfor %}
+          </table>
+
+          <!-- ページネーション -->
+          {% if paginate.pages > 1 %}
+            {% render "pagination", paginate: paginate %}
+          {% endif %}
+
+        {%- endpaginate -%}
+
+      </section>
+    </div>
+    <!-- /.maain-contents_wrap-->
+  </div>
+  <!-- /.inner-->
+  <div class="kazari03"></div>
+</div>
+<!-- /#contents-->
+
+
+{% schema %}
+  {
+    "name": "news-list",
+    "presets": [
+      {
+        "name": "news-list"
+      }
+    ]
+  }
+{% endschema %}

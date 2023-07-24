@@ -2,6 +2,7 @@
   "sections": {
     "main": {
       "type": "main-article",
+      "disabled": true,
       "blocks": {
         "featured_image": {
           "type": "featured_image",
@@ -36,9 +37,15 @@
       ],
       "settings": {
       }
+    },
+    "05218287-f820-445d-937a-7b04a7ea03ee": {
+      "type": "news-detail",
+      "settings": {
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "05218287-f820-445d-937a-7b04a7ea03ee"
   ]
 }

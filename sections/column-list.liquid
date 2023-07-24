@@ -1,0 +1,117 @@
+<div id="contents" class="p-under_wrap kazari08">
+  <div class="inner flex p-column-list_inner">
+
+    <!-- サイドバー -->
+    {% render 'side-menu' %}
+
+    <!-- メインコンテンツ -->
+    <div class="main-contents_wrap">
+      <section class="p-column-list_wrap">
+        <!-- パンくずリスト -->
+        <div class="breadcrumb">
+          <nav>
+            <ol>
+              <li>
+                <a href="{{ routes.root_url }}"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/icon-home.svg" alt=""></a>
+              </li>
+              <li>読みもの</li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class="p-under_head-img">
+          <img
+            class="is_ObjectFit"
+            src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/p-column_img.jpg"
+            alt="">
+          <div>
+            <p>読みもの</p>
+          </div>
+        </div>
+
+        <!-- 並び順 -->
+        <div class="p-order-content">
+          <ul>
+            <li class="u-pc">カテゴリ</li>
+            {% for tag in blogs[handle].all_tags %}
+              <li>
+                {% if current_tags and tag == current_tags.first %}
+                  <a href="{{ shop.url }}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}" class="order-active">{{ tag }}</a>
+                {% else %}
+                  <a href="{{ shop.url }}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}">{{ tag }}</a>
+                {% endif %}
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        {%- paginate blog.articles by 15 -%}
+
+          <div class="column-list_area">
+            <ul>
+              {% for article in blogs['column'].articles %}
+                <li class="column-box">
+                  <a href="{{ article.url }}">
+                    <div class="img-box"><img
+                        class="is_ObjectFit"
+                        src="{{ article.image.src | img_url: 'master' }}"
+                        alt=""></div>
+                    <p class="time">{{ article.created_at | date: '%Y.%m.%d' }}</p>
+                    <p class="title">{{ article.title }}</p>
+                    <p class="tag">{{ article.tags }}</p>
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+
+          <!-- ページネーション -->
+          {% comment %} <nav class="p-pager">
+          <ul class="p-gager__list">
+          <li class="p-pager__item">
+          <a href="#" class="p-pager__link p-pager__link--current">1</a>
+          </li>
+          <li class="p-pager__item">
+          <a href="#" class="p-pager__link">2</a>
+          </li>
+          <li class="p-pager__item">
+          <a href="#" class="p-pager__link">3</a>
+          </li>
+          <li class="p-pager__item">
+          <span class="p-pager__link">…</span>
+          </li>
+          <li class="p-pager__item">
+          <a href="#" class="p-pager__link">7</a>
+          </li>
+          <li class="p-pager__item">
+          <a href="#" class="p-pager__link">></a>
+          </li>
+          </ul>
+          </nav> {% endcomment %}
+          {% if paginate.pages > 1 %}
+            {% render "pagination", paginate: paginate %}
+          {% endif %}
+
+        {%- endpaginate -%}
+
+
+      </section>
+    </div>
+    <!-- /.maain-contents_wrap-->
+  </div>
+  <!-- /.inner-->
+  <div class="kazari03"></div>
+</div>
+<!-- /#contents-->
+
+
+{% schema %}
+  {
+    "name": "column-list",
+    "presets": [
+      {
+        "name": "column-list"
+      }
+    ]
+  }
+{% endschema %}

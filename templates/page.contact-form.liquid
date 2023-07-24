@@ -1,0 +1,55 @@
+<div id="contents" class="p-under_wrap kazari08">
+  <div class="inner flex">
+    <!-- サイドバー -->
+    {% render 'side-menu' %}
+
+    <!-- メインコンテンツ -->
+    <div class="main-contents_wrap">
+      <section class="p-contact_wrap">
+        <!-- パンくずリスト -->
+        <div class="breadcrumb">
+          <nav>
+            <ol>
+              <li>
+                <a href="{{ routes.root_url }}"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/icon-home.svg" alt=""></a>
+              </li>
+              <li>お問い合わせ</li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class="p-under_head-img">
+          <img
+            class="is_ObjectFit"
+            src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/p-under_img.jpg"
+            alt="">
+          <div>
+            <p>お問い合わせ</p>
+          </div>
+        </div>
+
+        <div class="text">
+          <p>
+            当社に対するご意見やご感想、ご質問などがございましたら、以下のフォームからお気軽にお問い合わせください。<br>
+            また、お客さまからよく寄せられる質問とその回答を、<a href="/pages/guide">「よくある質問」ページ</a>にまとめておりますので、ぜひご覧ください。
+          </p>
+        </div>
+
+        {% section 'contact-form' %}
+
+        <div class="text">
+          <p>
+            <a href="/pages/policy" target="_blank">「プライバシーポリシー」</a>をお読みいただき予め同意の上、お問い合わせください。<br>
+            ※営業時間により、ご返答までお時間いただく場合がございますので、予めご了承ください。
+          </p>
+        </div>
+
+
+      </section>
+    </div>
+    <!-- /.maain-contents_wrap-->
+  </div>
+  <!-- /.inner-->
+  <div class="kazari03"></div>
+</div>
+<!-- /#contents-->
