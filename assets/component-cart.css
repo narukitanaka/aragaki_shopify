@@ -29,7 +29,7 @@ cart-items.is-empty .title-wrapper-with-link,
   font-size: 18px !important;
   background-color: #030304 !important;
   color: #fff !important;
-  min-height: 75px !important;
+  min-height: 55px !important;
 }
 
 .cart__contents > * + * {

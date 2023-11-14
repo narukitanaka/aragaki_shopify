@@ -2,11 +2,28 @@
 
   <section class="p-about_wrap">
 
+    <!-- パンくずリスト SP時のみ -->
+    <div class="breadcrumb u-sp">
+      <div class="inner">
+        <nav>
+          <ol>
+            <li>
+              <a href="{{ routes.root_url }}"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/icon-home.svg" alt=""></a>
+            </li>
+            <li>食彩かふうについて</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+
     <div class="p-under_head-img">
-      <img
-        class="is_ObjectFit"
-        src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/p-about_img.jpg"
-        alt="">
+      <picture>
+        <source srcset="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/p-about_img_sp.jpg" media="(max-width: 769px)">
+        <img
+          class="is_ObjectFit"
+          src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/p-about_img.jpg"
+          alt="">
+      </picture>
       <div>
         <p>食彩かふうについて</p>
       </div>
@@ -23,9 +40,11 @@
             </div>
           </div>
           <div class="right">
-            <p>Okinawa発 沖縄食材のある暮らしの提案。健康志向の高まりなどにも触れる。「かふう」についても言及。ストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
             <p>
-              テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+              食彩かふう（しょくさいかふう）は、Okinawa発の食のセレクトショップです。「かふう」とは沖縄の方言で「幸せ」「良い知らせ」という意味です。<br>
+              私たちは、沖縄の食材と食文化を通して皆さんの生活に彩りと幸せを運ぶことを目指しています。<br>
+              レシピ本には載らない沖縄のリアルな食文化、知っているだけで味わい方が変わる食の歴史・・・。<br>
+              食彩かふうでは、沖縄の食材だけでなく、より豊かで充実した生活を送るためのアイデアもお届けします。
             </p>
           </div>
         </div>
@@ -36,13 +55,21 @@
     <div class="p-about_02">
       <div class="flex">
         <div class="left fadeIn">
-          <div class="img-box"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/about_img01.jpg" alt=""></div>
+          <div class="img-box">
+            <picture>
+              <source srcset="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/about_img01_sp.jpg" media="(max-width: 769px)">
+              <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/about_img01.jpg" alt="">
+            </picture>
+            {% comment %} <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/about_img01.jpg" alt=""> {% endcomment %}
+          </div>
         </div>
         <div class="right fadeIn">
           <h2>
-            <span>沖</span>縄から、“食”を通して幸せを運ぶ。</h2>
+            <span>沖</span>縄から、<br class="u-sp">“食”を通して幸せを運ぶ。</h2>
           <p>
-            沖縄料理の魅力を伝える。文化/健康などの側面。沖縄料理、和食、洋食、お菓子作りなど、働くスタッフたちのアイディアが豊富：商品だけでなく、アイディアや沖縄の食のリアルもお届けしたい。テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストキストテキストテキスト
+            食彩かふうでは、普段の暮らしに彩りを与える、食の「幸せ（かふう）」をお届けします。<br>
+            沖縄料理、和食、洋食、お菓子作りなど、スタッフたちのアイディアが溢れるコンテンツ。レシピ本には載っていない、個人のアイディアレシピ。意外と知らない食品の歴史。沖縄から知る異文化。さまざまな角度にスポットを当て、食をより楽しむ沖縄のリアルをお伝えします。<br>
+            食彩かふうは、食を通じて新たな幸せを発見し、沖縄食材のある健康で豊かな暮らしを提案をします。
           </p>
         </div>
       </div>
@@ -54,13 +81,22 @@
       <div class="flex">
         <div class="left fadeIn">
           <h2>
-            <span>食</span>品に寄り添い続け、70年以上。</h2>
+            <span>食</span>品に寄り添い続け、<br class="u-sp">70年以上。
+          </h2>
           <p>
-            創業70年余りの新垣具郎商店だから、仕入れ先の太いパイプと、豊富な取扱商品。乾物に特に強い。沖縄料理を作る上で必要な食材が揃っているストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト
+            食彩かふうを運営する(株)新垣具郎商店は、昭和25年創業以来、70年余り沖縄で食品に寄り添ってきました。新垣具郎商店が強みとしているのは、沖縄料理に欠かせない昆布を始めとする乾物です。乾物から始まった私たちは、仕入れ先の太いパイプを通じてアイテム数や商品の幅を広げてきました。沖縄から異文化を届ける、輸入食材も扱っています。<br>
+            その豊富な取扱商品数を生かし、沖縄の食のセレクトショップとして立ち上がったのが食彩かふうです。<br>
+            食品に向き合い、寄り添ってきた私たちだからこそお届けできる沖縄の食のリアル、暮らしを彩るヒントを提供していきます。
           </p>
         </div>
         <div class="right fadeIn">
-          <div class="img-box"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/about_img03.jpg" alt=""></div>
+          <div class="img-box">
+            <picture>
+              <source srcset="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/about_img03_sp.jpg" media="(max-width: 769px)">
+              <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/about_img03.jpg" alt="">
+            </picture>
+            {% comment %} <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/about_img03.jpg" alt=""> {% endcomment %}
+          </div>
         </div>
       </div>
       <div class="img-box02 fadeIn"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/about_img04.png" alt=""></div>

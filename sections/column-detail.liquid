@@ -1,0 +1,122 @@
+<div id="contents" class="p-under_wrap kazari08">
+  <div class="inner flex">
+
+    <!-- サイドバー -->
+    {% render 'side-menu' %}
+
+    <!-- メインコンテンツ -->
+    <div class="main-contents_wrap">
+      <section class="p-column_wrap">
+        <!-- パンくずリスト -->
+        <div class="breadcrumb">
+          <nav>
+            <ol>
+              <li>
+                <a href="{{ routes.root_url }}"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/icon-home.svg" alt=""></a>
+              </li>
+              <li>
+                <a href="/blogs/column">読みもの</a>
+              </li>
+              <li>{{ article.title }}</li>
+            </ol>
+          </nav>
+        </div>
+
+        <div class="p-under_head-img">
+          <img
+            class="is_ObjectFit"
+            src="{{ article.image.src | img_url: 'master' }}"
+            alt="">
+        </div>
+
+        <div class="column-ttl">
+          <p class="time">{{ article.created_at | date: '%Y.%m.%d' }}</p>
+          <h3>{{ article.title }}</h3>
+        </div>
+
+        <div class="column_area">
+          {{ article.content }}
+        </div>
+        <!-- /.column_area -->
+
+        <!-- この記事で紹介した商品 -->
+        {%- assign metafields-products = article.metafields.custom._introduction-item -%}
+        {%- if metafields-products != blank -%}
+          <div class="kanren-item_area">
+            <h3>この記事で紹介した商品</h3>
+            <ul>
+              {%- for product in metafields-products.value -%}
+                <li>
+                  <a href="{{ product.url }}">
+                    <div class="img-box"><img src="{{ product.featured_image | img_url: 'master' }}" alt=""></div>
+                    <p>{{ product.title }}</p>
+                    <p>{{ product.price | money_with_currency }}</p>
+                  </a>
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        {%- endif -%}
+        <!-- /.kanren-item_area -->
+
+        <!-- ページネーション -->
+        <div class="details-pagenation">
+          {% if blog.previous_article %}
+            <div class="pagenate left">
+              <a href="{{ blog.previous_article }}">
+                <div class="link-box">
+                  <div class="link_arrow"></div>
+                  <p>前の記事</p>
+                </div>
+                <div class="colum-info-box">
+                  <div class="img-box"><img src="{{ blog.previous_article.image.src | img_url: 'master' }}" alt=""></div>
+                  <div class="text-box">
+                    <p class="time">{{ blog.previous_article.created_at | date: '%Y.%m.%d' }}</p>
+                    <p class="tag">{{ blog.previous_article.tags }}</p>
+                  </div>
+                  <p class="title">{{ blog.previous_article.title }}</p>
+                </div>
+              </a>
+            </div>
+          {% endif %}
+          {% if blog.next_article %}
+            <div class="pagenate right">
+              <a href="{{ blog.next_article }}">
+                <div class="link-box">
+                  <div class="link_arrow"></div>
+                  <p>次の記事</p>
+                </div>
+                <div class="colum-info-box">
+                  <div class="img-box"><img src="{{ blog.next_article.image.src | img_url: 'master' }}" alt=""></div>
+                  <div class="text-box">
+                    <p class="time">{{ blog.next_article.created_at | date: '%Y.%m.%d' }}</p>
+                    <p class="tag">{{ blog.next_article.tags }}</p>
+                  </div>
+                  <p class="title">{{ blog.next_article.title }}</p>
+                </div>
+              </a>
+            </div>
+          {% endif %}
+        </div>
+
+
+      </section>
+    </div>
+    <!-- /.maain-contents_wrap-->
+  </div>
+  <!-- /.inner-->
+  <div class="kazari03"></div>
+</div>
+<!-- /#contents-->
+
+
+{% schema %}
+  {
+    "name": "column-detail",
+    "presets": [
+      {
+        "name": "column-detail"
+      }
+    ]
+  }
+{% endschema %}

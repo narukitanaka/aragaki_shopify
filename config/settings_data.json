@@ -1,6 +1,7 @@
 {
   "current": {
     "logo_width": 90,
+    "favicon": "shopify:\/\/shop_images\/Favicon_cf11e05e-56e0-4015-ae7a-43af7e038d03.png",
     "type_header_font": "assistant_n4",
     "heading_scale": 100,
     "type_body_font": "assistant_n4",
@@ -128,27 +129,222 @@
         "settings": {
           "color_scheme": "background-1"
         }
+      },
+      "lp-items_morning": {
+        "type": "lp-items_morning",
+        "blocks": {
+          "91547be0-f563-43fa-a102-a7bc268c9a27": {
+            "type": "set_product_block",
+            "settings": {
+              "product": "マルキヨ味噌の5色油みそセット",
+              "custom_title": "ご飯のお供にオススメ",
+              "product_set_name": "マルキヨ味噌　昔ながらの５色味噌セット",
+              "product_name": "あぶらみそ／うめみそ／だいずみそ／くーすみそ／かつおみそ"
+            }
+          },
+          "ff48f8b5-1cb4-4ccc-8f0a-867a7830f84b": {
+            "type": "used_product_block",
+            "settings": {
+              "used_product": "マルキヨ味噌-昔ながらのあぶらみそ-150ｇ"
+            }
+          },
+          "c8d8b7fe-8512-4621-9a6f-4f235e64de2b": {
+            "type": "used_product_block",
+            "settings": {
+              "used_product": "マルキヨ味噌-昔ながらのだいずみそ-150ｇのコピー"
+            }
+          },
+          "bf388ae8-9fdf-4d83-8a3b-27ead9d864d4": {
+            "type": "used_product_block",
+            "settings": {
+              "used_product": "マルキヨ味噌-昔ながらのうめみそ-150ｇのコピー"
+            }
+          },
+          "cf186ed5-4909-456a-a0cf-30ae83c01c07": {
+            "type": "set_product_block",
+            "settings": {
+              "product": "玉那覇味噌-首里みそ-王朝みそセット",
+              "custom_title": "古都首里で作られた伝統的なお味噌",
+              "product_set_name": "玉那覇味噌　首里みそ・王朝みそセット",
+              "product_name": "王朝みそ×１個 \/ 首里みそ×１個"
+            }
+          },
+          "c5ac3de5-5086-4b4b-845d-c7e2e3ac443f": {
+            "type": "used_product_block",
+            "settings": {
+              "used_product": "まえはら食品-宮古風味噌-850g"
+            }
+          },
+          "e79f1b8d-597e-4a46-ad36-ab5c1380119b": {
+            "type": "used_product_block",
+            "settings": {
+              "used_product": "玉那覇味噌"
+            }
+          }
+        },
+        "block_order": [
+          "91547be0-f563-43fa-a102-a7bc268c9a27",
+          "ff48f8b5-1cb4-4ccc-8f0a-867a7830f84b",
+          "c8d8b7fe-8512-4621-9a6f-4f235e64de2b",
+          "bf388ae8-9fdf-4d83-8a3b-27ead9d864d4",
+          "cf186ed5-4909-456a-a0cf-30ae83c01c07",
+          "c5ac3de5-5086-4b4b-845d-c7e2e3ac443f",
+          "e79f1b8d-597e-4a46-ad36-ab5c1380119b"
+        ],
+        "settings": {
+        }
+      },
+      "lp-items_lunch": {
+        "type": "lp-items_lunch",
+        "blocks": {
+          "ce18094c-88c3-400a-a16f-94588fab6eff": {
+            "type": "set_product_block",
+            "settings": {
+              "product": "ランチセット",
+              "custom_title": "手軽に楽しめる！",
+              "product_set_name": "かふうセレクト　ランチセット 小",
+              "product_name": "内容／タコライス １個・ハイサイソース（小）１本・チューリップポーク ２個　【写真の内容はイメージです】"
+            }
+          },
+          "1c3b3b2b-4e04-4b6a-a092-60ea8dbeb6a7": {
+            "type": "used_product_block",
+            "settings": {
+              "used_product": "ハイサイソース-ｓ-220g"
+            }
+          },
+          "58c7d0d3-8616-40d5-8d4c-bea28f4a29a5": {
+            "type": "used_product_block",
+            "settings": {
+              "used_product": "オキハム-タコライス3食"
+            }
+          },
+          "4762f5f6-b967-4b6d-9522-1d2b674f39ca": {
+            "type": "used_product_block",
+            "settings": {
+              "used_product": "ポークランチョンミート-340ｇ"
+            }
+          },
+          "f556ebb8-c4a0-46e5-afcd-bdb64281ad80": {
+            "type": "set_product_block",
+            "settings": {
+              "product": "ランチセット-中",
+              "custom_title": "沖縄ランチの定番",
+              "product_set_name": "かふうセレクト　ランチセット　中",
+              "product_name": "タコライス×３個 \/ ハイサイソース大×１個 \/ チューリップポーク×６個"
+            }
+          },
+          "3e0bccc0-5693-412e-a93b-69d6dcb3798b": {
+            "type": "used_product_block",
+            "settings": {
+              "used_product": "ハイサイソースm-350ｇ"
+            }
+          }
+        },
+        "block_order": [
+          "ce18094c-88c3-400a-a16f-94588fab6eff",
+          "1c3b3b2b-4e04-4b6a-a092-60ea8dbeb6a7",
+          "58c7d0d3-8616-40d5-8d4c-bea28f4a29a5",
+          "4762f5f6-b967-4b6d-9522-1d2b674f39ca",
+          "f556ebb8-c4a0-46e5-afcd-bdb64281ad80",
+          "3e0bccc0-5693-412e-a93b-69d6dcb3798b"
+        ],
+        "settings": {
+        }
+      },
+      "lp-items_dinner": {
+        "type": "lp-items_dinner",
+        "blocks": {
+          "a2730ee2-5465-4079-be16-e49a54fceee8": {
+            "type": "set_product_block",
+            "settings": {
+              "product": "かふうセレクト-晩ごはんセット-小",
+              "custom_title": "沖縄 料理の定番！レトルトがメインのお手軽セット",
+              "product_set_name": "かふうセレクト 晩ごはんセット　小",
+              "product_name": "マルタケ沖縄そば（ダシ付2食）×1個 \/ 新垣 県産アーサ×1個 \/ オキハム ソーキ汁×1個 \/ オキハム 軟骨ソーキ×1個 \/ 新垣 くーぶいりちー×1個 \/ 新垣 味付結び昆布×1個"
+            }
+          },
+          "32b5d02b-7edb-403d-9249-bd8457b224f1": {
+            "type": "used_product_block",
+            "settings": {
+              "used_product": "マルタケ-沖縄そば-だし付２食-160g"
+            }
+          },
+          "c990c988-0bf5-4a02-9e57-454ae6e519e1": {
+            "type": "used_product_block",
+            "settings": {
+              "used_product": "オキハム-ソーキ汁400ｇ"
+            }
+          },
+          "7a266dca-916b-4ab8-b726-82fbd873a42e": {
+            "type": "used_product_block",
+            "settings": {
+              "used_product": "オキハム-軟骨ソーキ165ｇ"
+            }
+          },
+          "02c632f4-5a1f-48f5-899c-dbcb70434e21": {
+            "type": "used_product_block",
+            "settings": {
+              "used_product": "新垣-レトルト-くーぶイリチー-200ｇ"
+            }
+          },
+          "e6dbf6a8-7c03-4902-bfe9-0fe387270583": {
+            "type": "used_product_block",
+            "settings": {
+              "used_product": "新垣-レトルト-味付結び昆布-10"
+            }
+          },
+          "3a613aa5-1f7c-43cb-a864-e4652cc7de2d": {
+            "type": "set_product_block",
+            "settings": {
+              "product": "かふうセレクト-晩ごはんセット-中",
+              "custom_title": "沖縄家庭料理の定番セットにこだわり品種 椎茸がプラス",
+              "product_set_name": "かふうセレクト　晩ごはんセット　中",
+              "product_name": "マルタケ沖縄そば(ダシ付2食)×2個 \/ 新垣 県産アーサ × 1個 \/ オキハム ソーキ汁 × 1個 \/ オキハム ジューシーの素×1個 \/ 新垣 くーぶいりちー×1個 \/ 新垣 味付結び昆布×1個 \/ 大分産乾しいたけ（こだわり品種 香信 ）×1個"
+            }
+          },
+          "59b44fe5-dbcc-498e-968c-05c5797de2d0": {
+            "type": "used_product_block",
+            "settings": {
+              "used_product": "大分乾物-こだわり品種-香信-35ｇ"
+            }
+          }
+        },
+        "block_order": [
+          "a2730ee2-5465-4079-be16-e49a54fceee8",
+          "32b5d02b-7edb-403d-9249-bd8457b224f1",
+          "c990c988-0bf5-4a02-9e57-454ae6e519e1",
+          "7a266dca-916b-4ab8-b726-82fbd873a42e",
+          "02c632f4-5a1f-48f5-899c-dbcb70434e21",
+          "e6dbf6a8-7c03-4902-bfe9-0fe387270583",
+          "3a613aa5-1f7c-43cb-a864-e4652cc7de2d",
+          "59b44fe5-dbcc-498e-968c-05c5797de2d0"
+        ],
+        "settings": {
+        }
       }
     },
+    "content_for_index": [
+
+    ],
     "color_schemes": {
       "background-1": {
         "settings": {
-          "background": "#FFFFFF",
+          "background": "#ffffff",
           "background_gradient": "",
           "text": "#121212",
           "button": "#121212",
-          "button_label": "#FFFFFF",
+          "button_label": "#ffffff",
           "secondary_button_label": "#121212",
           "shadow": "#121212"
         }
       },
       "background-2": {
         "settings": {
-          "background": "#F3F3F3",
+          "background": "#f3f3f3",
           "background_gradient": "",
           "text": "#121212",
           "button": "#121212",
-          "button_label": "#F3F3F3",
+          "button_label": "#f3f3f3",
           "secondary_button_label": "#121212",
           "shadow": "#121212"
         }
@@ -157,10 +353,10 @@
         "settings": {
           "background": "#242833",
           "background_gradient": "",
-          "text": "#FFFFFF",
-          "button": "#FFFFFF",
+          "text": "#ffffff",
+          "button": "#ffffff",
           "button_label": "#000000",
-          "secondary_button_label": "#FFFFFF",
+          "secondary_button_label": "#ffffff",
           "shadow": "#121212"
         }
       },
@@ -168,21 +364,21 @@
         "settings": {
           "background": "#121212",
           "background_gradient": "",
-          "text": "#FFFFFF",
-          "button": "#FFFFFF",
+          "text": "#ffffff",
+          "button": "#ffffff",
           "button_label": "#121212",
-          "secondary_button_label": "#FFFFFF",
+          "secondary_button_label": "#ffffff",
           "shadow": "#121212"
         }
       },
       "accent-2": {
         "settings": {
-          "background": "#334FB4",
+          "background": "#334fb4",
           "background_gradient": "",
-          "text": "#FFFFFF",
-          "button": "#FFFFFF",
-          "button_label": "#334FB4",
-          "secondary_button_label": "#FFFFFF",
+          "text": "#ffffff",
+          "button": "#ffffff",
+          "button_label": "#334fb4",
+          "secondary_button_label": "#ffffff",
           "shadow": "#121212"
         }
       }

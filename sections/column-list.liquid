@@ -49,45 +49,40 @@
 
           <div class="column-list_area">
             <ul>
-              {% for article in blogs['column'].articles %}
-                <li class="column-box">
-                  <a href="{{ article.url }}">
-                    <div class="img-box"><img
-                        class="is_ObjectFit"
-                        src="{{ article.image.src | img_url: 'master' }}"
-                        alt=""></div>
-                    <p class="time">{{ article.created_at | date: '%Y.%m.%d' }}</p>
-                    <p class="title">{{ article.title }}</p>
-                    <p class="tag">{{ article.tags }}</p>
-                  </a>
-                </li>
-              {% endfor %}
+              {% if current_tags %}
+                {% for article in blogs['column'].articles %}
+                  {% if article.tags contains current_tags.first %}
+                    <li class="column-box">
+                      <a href="{{ article.url }}">
+                        <div class="img-box"><img
+                            class="is_ObjectFit"
+                            src="{{ article.image.src | img_url: 'master' }}"
+                            alt=""></div>
+                        <p class="time">{{ article.created_at | date: '%Y.%m.%d' }}</p>
+                        <p class="title">{{ article.title }}</p>
+                        <p class="tag">{{ article.tags }}</p>
+                      </a>
+                    </li>
+                  {% endif %}
+                {% endfor %}
+              {% else %}
+                {% for article in blogs['column'].articles %}
+                  <li class="column-box">
+                    <a href="{{ article.url }}">
+                      <div class="img-box"><img
+                          class="is_ObjectFit"
+                          src="{{ article.image.src | img_url: 'master' }}"
+                          alt=""></div>
+                      <p class="time">{{ article.created_at | date: '%Y.%m.%d' }}</p>
+                      <p class="title">{{ article.title }}</p>
+                      <p class="tag">{{ article.tags }}</p>
+                    </a>
+                  </li>
+                {% endfor %}
+              {% endif %}
             </ul>
           </div>
 
-          <!-- ページネーション -->
-          {% comment %} <nav class="p-pager">
-          <ul class="p-gager__list">
-          <li class="p-pager__item">
-          <a href="#" class="p-pager__link p-pager__link--current">1</a>
-          </li>
-          <li class="p-pager__item">
-          <a href="#" class="p-pager__link">2</a>
-          </li>
-          <li class="p-pager__item">
-          <a href="#" class="p-pager__link">3</a>
-          </li>
-          <li class="p-pager__item">
-          <span class="p-pager__link">…</span>
-          </li>
-          <li class="p-pager__item">
-          <a href="#" class="p-pager__link">7</a>
-          </li>
-          <li class="p-pager__item">
-          <a href="#" class="p-pager__link">></a>
-          </li>
-          </ul>
-          </nav> {% endcomment %}
           {% if paginate.pages > 1 %}
             {% render "pagination", paginate: paginate %}
           {% endif %}

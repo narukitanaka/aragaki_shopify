@@ -74,7 +74,7 @@
                 <time>{{ article.created_at | date: '%Y.%m.%d' }}</time>
               </th>
               <td>
-                <a style="pointer-events: none;" href="{{ article.url }}">{{ article.title }}</a>
+                <a href="{{ article.url }}">{{ article.title }}</a>
               </td>
             </tr>
           {% endfor %}
@@ -92,70 +92,72 @@
         <h2 class="fadeIn">
           <span>特</span>集</h2>
         <p class="text fadeIn">１日を彩る沖縄の食卓</p>
-        <p class="text fadeIn" style="color: #f00;">COMING SOON...</p>
-        {% comment %} <div class="feature_area">
-        <div class="feature_box fadeIn">
-        <a href="#">
-        <picture>
-        <source srcset="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_mornig-img01_sp.jpg" media="(max-width: 769px)">
-        <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_mornig-img01.jpg" alt="">
-        </picture>
-        <div>
-        <p>清々しい朝を迎えるための<br class="u-sp">健康朝ごはん。</p>
-        <div class="link_arrow"></div>
+        {% comment %} <p class="text fadeIn" style="color: #f00;">COMING SOON...</p> {% endcomment %}
+
+        <div class="feature_area">
+          <div class="feature_box fadeIn">
+            <a href="/pages/lp_morning">
+              <picture>
+                <source srcset="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_mornig-img01_sp.jpg" media="(max-width: 769px)">
+                <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_mornig-img01.jpg" alt="">
+              </picture>
+              <div>
+                <p>清々しい朝を迎えるための<br class="u-sp">健康朝ごはん。</p>
+                <div class="link_arrow"></div>
+              </div>
+            </a>
+          </div>
+          <div class="feature_box fadeIn">
+            <a href="/pages/lp_lunch">
+              <picture>
+                <source srcset="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_lunch-img01_sp.jpg" media="(max-width: 769px)">
+                <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_lunch-img01.jpg" alt="">
+              </picture>
+              <div>
+                <p>ランチタイムは<br class="u-sp">ちょっと外国気分。</p>
+                <div class="link_arrow"></div>
+              </div>
+            </a>
+          </div>
+          <div class="feature_box fadeIn">
+            <a href="/pages/lp_teatime">
+              <picture>
+                <source srcset="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_teatime-img01_sp.jpg" media="(max-width: 769px)">
+                <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_teatime-img01.jpg" alt="">
+              </picture>
+              <div>
+                <p>ホッと一息、<br class="u-sp">昼下がりを鮮やかに彩る。</p>
+                <div class="link_arrow"></div>
+              </div>
+            </a>
+          </div>
+          <div class="feature_box fadeIn">
+            <a href="/pages/lp_dinner">
+              <picture>
+                <source srcset="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_dinner-img01_sp.jpg" media="(max-width: 769px)">
+                <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_dinner-img01.jpg" alt="">
+              </picture>
+              <div>
+                <p>琉球の味覚を存分に味わう。</p>
+                <div class="link_arrow"></div>
+              </div>
+            </a>
+          </div>
+          <div class="feature_box fadeIn">
+            <a href="/pages/lp_evening">
+              <picture>
+                <source srcset="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_evening-img01_sp.jpg" media="(max-width: 769px)">
+                <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_evening-img01.jpg" alt="">
+              </picture>
+              <div>
+                <p>晩酌のお供に。</p>
+                <div class="link_arrow"></div>
+              </div>
+            </a>
+          </div>
         </div>
-        </a>
-        </div>
-        <div class="feature_box fadeIn">
-        <a href="#">
-        <picture>
-        <source srcset="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_lunch-img01_sp.jpg" media="(max-width: 769px)">
-        <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_lunch-img01.jpg" alt="">
-        </picture>
-        <div>
-        <p>ランチタイムは<br class="u-sp">ちょっと外国気分。</p>
-        <div class="link_arrow"></div>
-        </div>
-        </a>
-        </div>
-        <div class="feature_box fadeIn">
-        <a href="#">
-        <picture>
-        <source srcset="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_teatime-img01_sp.jpg" media="(max-width: 769px)">
-        <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_teatime-img01.jpg" alt="">
-        </picture>
-        <div>
-        <p>ホッと一息、<br class="u-sp">昼下がりを鮮やかに彩る。</p>
-        <div class="link_arrow"></div>
-        </div>
-        </a>
-        </div>
-        <div class="feature_box fadeIn">
-        <a href="#">
-        <picture>
-        <source srcset="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_dinner-img01_sp.jpg" media="(max-width: 769px)">
-        <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_dinner-img01.jpg" alt="">
-        </picture>
-        <div>
-        <p>琉球の味覚を存分に味わう。</p>
-        <div class="link_arrow"></div>
-        </div>
-        </a>
-        </div>
-        <div class="feature_box fadeIn">
-        <a href="#">
-        <picture>
-        <source srcset="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_evening-img01_sp.jpg" media="(max-width: 769px)">
-        <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/top_evening-img01.jpg" alt="">
-        </picture>
-        <div>
-        <p>晩酌のお供に。</p>
-        <div class="link_arrow"></div>
-        </div>
-        </a>
-        </div>
-        </div> {% endcomment %}
         <!-- /.feature_area-->
+
       </section>
       <!-- /.top_feature_wrap-->
 
@@ -283,58 +285,29 @@
       <section class="top_recipe_wrap">
         <h2 class="fadeIn">
           <span>読</span>みもの</h2>
-        <ul class="fadeIn">{% comment %} <li>
-          <a href="#">
-          <img
-          class="is_ObjectFit"
-          src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/yomimono_sample-img01.jpg"
-          alt="">
-          <p>タイトルタイトルタイトル</p>
-          </a>
-          </li>
-          <li>
-          <a href="#">
-          <img
-          class="is_ObjectFit"
-          src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/yomimono_sample-img02.jpg"
-          alt="">
-          <p>タイトルタイトルタイトル</p>
-          </a>
-          </li>
-          <li>
-          <a href="#">
-          <img
-          class="is_ObjectFit"
-          src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/yomimono_sample-img03.jpg"
-          alt="">
-          <p>タイトルタイトルタイトル</p>
-          </a>
-          </li>
-          <li>
-          <a href="#">
-          <img
-          class="is_ObjectFit"
-          src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/yomimono_sample-img04.jpg"
-          alt="">
-          <p>タイトルタイトルタイトル</p>
-          </a>
-          </li>
-          <li>
-          <a href="#">
-          <img
-          class="is_ObjectFit"
-          src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/yomimono_sample-img05.jpg"
-          alt="">
-          <p>タイトルタイトルタイトル</p>
-          </a>
-          </li> {% endcomment %}
-        </ul>
-        {% comment %} <div class="archive-link">
-        <a href="#">
-        <p>読みもの一覧へ</p>
-        <div class="link_arrow"></div>
-        </a>
-        </div> {% endcomment %}
+        {% assign column_blog = blogs['column'] %}
+        {% assign latest_articles = column_blog.articles | limit: 5 %}
+        {% if latest_articles.size > 0 %}
+          <ul class="fadeIn">
+            {% for article in latest_articles %}
+              <li>
+                <a href="{{ article.url }}">
+                  <img
+                    class="is_ObjectFit"
+                    src="{{ article.image.src | img_url: 'master' }}"
+                    alt="">
+                  <p>{{ article.title }}</p>
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+          <div class="archive-link">
+            <a href="/blogs/column">
+              <p>読みもの一覧へ</p>
+              <div class="link_arrow"></div>
+            </a>
+          </div>
+        {% endif %}
       </section>
       <!-- /.top_recipe_wrap -->
 

@@ -145,6 +145,7 @@ $(function () {
     speed: 1000,
     slidesPerView: 1,
     centeredSlides: true,
+    spaceBetween: 15,
   });
 
 });

@@ -125,6 +125,12 @@
                 <td>{{ product.metafields.custom._preservation }}</td>
               {% endif %}
             </tr>
+            <tr>
+              {% if product.metafields.custom._allergen != empty %}
+                <th>アレルゲン</th>
+                <td>{{ product.metafields.custom._allergen }}</td>
+              {% endif %}
+            </tr>
           </table>
           <div class="p-count">
             <form
@@ -148,7 +154,7 @@
               </div>
             </form>
           </div>
-          <a href="#" class="c-txt-inquiry">この商品について問い合わせる</a>
+          <a href="/pages/contact-form" class="c-txt-inquiry">この商品について問い合わせる</a>
         </div>
         <!-- /.p-merchandise__detail-content -->
       </div>

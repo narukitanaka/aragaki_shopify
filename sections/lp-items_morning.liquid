@@ -1,0 +1,95 @@
+<div class="feature-lp_item-info">
+  <div class="inner">
+    <div id="set-item" class="set-item">
+      <h2>
+        <span>セ</span>ット一覧</h2>
+      {% for set_product_block in section.blocks %}
+        {% if set_product_block.type == 'set_product_block' %}
+          <div class="box fadeIn">
+            <div class="left"><img src="{{ set_product_block.settings.product.featured_image.src | img_url: 'master' }}" alt=""></div>
+            <div class="right">
+              <h3>
+                <span>{{ set_product_block.settings.custom_title }}</span><br>{{ set_product_block.settings.product_set_name }}</h3>
+              <p class="price">{{ set_product_block.settings.product.price | money }}<span>（税込）</span>
+              </p>
+              <button>
+                <a href="{{ set_product_block.settings.product.url }}">商品を見る</a>
+              </button>
+              <div class="set-info">
+                <p>セット内容</p>
+                <ul>
+                  <li>{{ set_product_block.settings.product_name | newline_to_br }}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+    <div id="used-item" class="used-item">
+      <h2>
+        <span>使</span>用されている商品</h2>
+      <ul>
+        {% for used_product_block in section.blocks %}
+          {% if used_product_block.type == 'used_product_block' %}
+            <li class="fadeIn">
+              <a href="{{ used_product_block.settings.used_product.url }}">
+                <div class="box-img"><img src="{{ used_product_block.settings.used_product.featured_image.src | img_url: 'master' }}" alt=""></div>
+                <p>{{ used_product_block.settings.used_product.title }}</p>
+                <p>{{ used_product_block.settings.used_product.price | money }}</p>
+              </a>
+            </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  <div class="kazari03"></div>
+  <div class="kazari04"></div>
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "セット商品・使用商品",
+    "blocks": [
+      {
+        "type": "set_product_block",
+        "name": "セット商品ブロック",
+        "settings": [
+          {
+            "type": "product",
+            "id": "product",
+            "label": "商品を選択"
+          }, {
+            "type": "text",
+            "id": "custom_title",
+            "label": "サブタイトル",
+            "default": "サブタイトルを記入してください"
+          }, {
+            "type": "text",
+            "id": "product_set_name",
+            "label": "セット商品名",
+            "default": "セット商品名を記入してください"
+          }, {
+            "type": "textarea",
+            "id": "product_name",
+            "label": "セット内容",
+            "default": "商品名 / 商品名 / 商品名"
+          }
+        ]
+      }, {
+        "type": "used_product_block",
+        "name": "使用商品ブロック",
+        "settings": [
+          {
+            "type": "product",
+            "id": "used_product",
+            "label": "使用されている商品を選択"
+          }
+        ]
+      }
+    ]
+  }
+{% endschema %}

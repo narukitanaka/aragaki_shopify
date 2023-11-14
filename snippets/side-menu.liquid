@@ -2,11 +2,22 @@
   <div class="side_box">
     <h3>特集<br>1日を彩る沖縄の食卓</h3>
     <ul>
-      <li><a href="#">朝 - 朝ごはん</a></li>
-      <li><a href="#">昼 - ランチ</a></li>
-      <li><a href="#">夕 - ティータイム</a></li>
-      <li><a href="#">晩 - 晩ご飯</a></li>
-      <li><a href="#">夜 - 晩酌</a></li>
+      <li>
+        <a href="/pages/lp_morning">朝 - 朝ごはん</a>
+      </li>
+      <li>
+        <a href="/pages/lp_lunch">昼 - ランチ</a>
+      </li>
+      <li>
+        <a href="/pages/lp_teatime">夕 - ティータイム</a>
+      </li>
+      <li>
+        <a href="/pages/lp_dinner">晩 - 晩ご飯</a>
+      </li>
+      <li>
+        <a href="/pages/lp_evening">夜 - 晩酌</a>
+      </li>
+      {% comment %} <li>COMING SOON...</li> {% endcomment %}
     </ul>
   </div>
   <div class="side_box">
@@ -45,8 +56,12 @@
   <div class="side_box">
     <h3>読みもの</h3>
     <ul>
-      {% comment %} <li><a href="#">レシピ</a></li>
-      <li><a href="#">レシピ</a></li> {% endcomment %}
+      {% assign blog = blogs['column'] %}
+      {% for tag in blog.all_tags %}
+        <li>
+          <a href="{{ shop.url }}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}">{{ tag }}</a>
+        </li>
+      {% endfor %}
     </ul>
   </div>
   <div class="side_box under_menu">

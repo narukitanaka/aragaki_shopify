@@ -62,7 +62,7 @@
         </div>
 
         <div class="header_icon_login">
-          <a href="#">
+          <a href="/account">
             <img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/icon-login.png" alt="">
             <p>ログイン</p>
           </a>
@@ -93,12 +93,13 @@
                 <ul>
                   {% for link in linklists.feature-menu.links %}
                     <li class="mega-menu_list">
-                      <a style="pointer-events: none;" href="{{ link.url }}">
+                      <a href="{{ link.url }}">
                         <img src="{{ link.object.metafields.custom._page_img | img_url: 'master' }}" alt="">
                         {{ link.title }}
                       </a>
                     </li>
                   {% endfor %}
+                  {% comment %} <li>COMING SOON...</li> {% endcomment %}
                 </ul>
               </div>
             </div>
@@ -153,7 +154,7 @@
             <a href="/search"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/icon-serch.png" alt=""></a>
           </div>
           <div class="icon-box">
-            <a href="#"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/icon-login.png" alt="">ログイン</a>
+            <a href="/account"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/icon-login.png" alt="">ログイン</a>
           </div>
           <div class="icon-box">
             <a href="/cart"><img src="https://cdn.shopify.com/s/files/1/0775/7886/2887/files/icon-cart.png" alt="">カート</a>
@@ -189,6 +190,7 @@
               <a href="{{ link.url }}">{{ link.title }}</a>
             </li>
           {% endfor %}
+          {% comment %} <li>COMING SOON...</li> {% endcomment %}
         </ul>
         <li class="list-ttl title">
           商品を選ぶ
@@ -225,15 +227,15 @@
           <div class="arrow_down"></div>
         </li>
         <ul class="nav-list box">
-          <li>
-            <a href="#">レシピ</a>
-          </li>
-          <li>
-            <a href="#">レシピ</a>
-          </li>
+          {% assign blog = blogs['column'] %}
+          {% for tag in blog.all_tags %}
+            <li>
+              <a href="{{ shop.url }}/blogs/{{ blog.handle }}/tagged/{{ tag | handleize }}">{{ tag }}</a>
+            </li>
+          {% endfor %}
         </ul>
         <li class="list-ttl">
-          <a href="#">食彩かふうについて</a>
+          <a href="/pages/about">食彩かふうについて</a>
           <div class="arrow_right"></div>
         </li>
         <li class="list-ttl">
@@ -241,7 +243,7 @@
           <div class="arrow_right"></div>
         </li>
         <li class="list-ttl">
-          <a href="/pages/guide">よくあるご質問</a>
+          <a href="/pages/faq">よくあるご質問</a>
           <div class="arrow_right"></div>
         </li>
         <li class="list-ttl">
@@ -253,7 +255,7 @@
       </ul>
     </nav>
     <button>
-      <a href="pages/company">お問い合わせはこちら<div class="link_arrow"></div>
+      <a href="/pages/contact-form">お問い合わせはこちら<div class="link_arrow"></div>
       </a>
     </button>
     <button>
