@@ -5466,6 +5466,7 @@ company
 }
 .p-feature-lp_wrap .feature-lp_item-info .set-item .box .right .set-info ul li {
   font-size: 14px;
+  line-height: 1.7;
 }
 @media screen and (max-width: 769px) {
   .p-feature-lp_wrap .feature-lp_item-info .set-item .box .right .set-info ul li {
